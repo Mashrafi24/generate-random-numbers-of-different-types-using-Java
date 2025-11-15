@@ -1,0 +1,34 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Random {
+    public static void main(String[] args) {
+        // Generate random integers in range 0 to 999
+
+        // Random number between 0 and 999
+        int r1 = ThreadLocalRandom.current().nextInt(1000);
+        
+        // Random number between 0 and 999
+        int r2 = ThreadLocalRandom.current().nextInt(1000); 
+
+        // Print random integers
+        System.out.println("Random Integers: " + r1);
+        System.out.println("Random Integers: " + r2);
+
+        // Generate Random doubles between 0.0 (inclusive) 
+        // and 1.0 (exclusive)
+        double rd1 = ThreadLocalRandom.current().nextDouble();
+        double rd2 = ThreadLocalRandom.current().nextDouble();
+
+        // Print random doubles
+        System.out.println("Random Doubles: " + rd1);
+        System.out.println("Random Doubles: " + rd2);
+
+        // Generate random booleans
+        boolean rb1 = ThreadLocalRandom.current().nextBoolean();
+        boolean rb2 = ThreadLocalRandom.current().nextBoolean();
+
+        // Print random Booleans
+        System.out.println("Random Booleans: " + rb1);
+        System.out.println("Random Booleans: " + rb2);
+    }
+}
